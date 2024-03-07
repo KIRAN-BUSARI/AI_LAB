@@ -11,17 +11,17 @@ tree = {
     10:[]
 }
 def depth_first_search(tree,start):
-    stack=[start]
-    visited=[]
+    stack = [start]
+    visited = []
 
     while stack:
         print("Before ",stack)
-        node=stack.pop()
+        node = stack.pop()
         visited.append(node)
-        print("Visited: \n",visited)
+        # print("Visited: \n",visited)
         for child in reversed(tree[node]):
             # print(child)
-            if child not in visited and child not in stack:
+            if child not in (visited and stack):
                 stack.append(child)
         print("After ",stack)
     

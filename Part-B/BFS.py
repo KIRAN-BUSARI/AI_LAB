@@ -11,8 +11,8 @@ tree = {
     10:[]
 }
 def breadth_first_search(tree,start):
-    queue=[start]
-    visited=[]
+    queue = [start]
+    visited = []
 
     while queue:
         print("Before ",queue)
@@ -21,7 +21,7 @@ def breadth_first_search(tree,start):
         # print("Visited: \n",visited)
         for child in tree[node]:
             # print(child)
-            if child not in visited and child not in queue:
+            if child not in (visited and queue):
                 # print(child)
                 queue.append(child)
         print("After ",queue)
