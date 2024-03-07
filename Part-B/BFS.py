@@ -10,7 +10,7 @@ tree = {
     9:[],
     10:[]
 }
-def depth_first_search(tree,start):
+def breadth_first_search(tree,start):
     queue=[start]
     visited=[]
 
@@ -28,4 +28,4 @@ def depth_first_search(tree,start):
     
     return visited
 
-print(depth_first_search(tree,1))
+print(breadth_first_search(tree,1))
