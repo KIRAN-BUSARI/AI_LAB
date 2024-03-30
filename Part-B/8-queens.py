@@ -1,8 +1,8 @@
-print("Enter the number of queens")
+# Part-B/8-queens.py
 
-N = int(input())
+N = int(input("Enter the number of queens : "))
 
-board = [[0]*N for _ in range(N)]
+board = [[0] * N for _ in range(N)]
 
 def attack(i,j):
     # Checks horizontal and vertical
