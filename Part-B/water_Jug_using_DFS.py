@@ -42,5 +42,6 @@ if sol_path:
     print("Solution Found: ")
     for state in sol_path:
         print(f"({state[0]},{state[1]})")
+        # print("({},{})".format(state[0],state[1]))
 else: 
     print("Solution Not Found")
